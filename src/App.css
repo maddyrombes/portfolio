@@ -13,14 +13,14 @@
     left: 0;
     text-align: center;
     line-height: 22px;
-    margin-top: 40px;
+    margin-top: 28px;
     color: white;
 }
 
 .header {
     font-family: 'Playfair Display', serif;
     letter-spacing: 7px;
-    font-size: 20px;
+    font-size: 27px;
 }
 
 .mainnav_list {
@@ -39,4 +39,15 @@
 
 .mainnav_listitem {
     margin-right: 32px;
+}
+
+.me {
+    width: 200px;
+    height: 200px;
+    display: block;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 300px;
+    position: relative;
 }
