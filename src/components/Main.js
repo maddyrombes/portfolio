@@ -8,7 +8,7 @@ const Main = () => {
       <div>
         <img className="main_background" alt="bridge" src={bridge} />
         <Header />
-        <img className="me" src={me} />
+        <img className="me_img" alt="me" src={me} />
       </div>
     )
 }

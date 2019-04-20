@@ -39,9 +39,15 @@
 
 .mainnav_listitem {
     margin-right: 32px;
+    color: white;
+    text-decoration: none;
 }
 
-.me {
+.mainnav_listitem:hover {
+    text-decoration: underline;
+}
+
+.me_img {
     width: 200px;
     height: 200px;
     display: block;
@@ -50,4 +56,20 @@
     margin-right: auto;
     padding-top: 300px;
     position: relative;
+}
+
+.about {
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    height: 780px;
+    margin-top: 290px;
+    z-index: 1;
+    position: relative;
+    background-color: #798998;
+}
+
+.about_description {
+    padding-top: 300px;
 }
