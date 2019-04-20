@@ -1,32 +1,100 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 @import url('https://fonts.googleapis.com/css?family=Proza+Libre');
 
+.main_background {
+    height: 100%; 
+    width: 100%;
+    position: absolute;
+}
+
+.header_container {
+    position: absolute;
+    right: 0;
+    left: 0;
+    text-align: center;
+    line-height: 22px;
+    margin-top: 28px;
+    color: white;
+}
 
 .header {
     font-family: 'Playfair Display', serif;
-    text-align: center;
-    line-height: 22px;
-    margin-top: 40px;
-}
-
-.header_name {
     letter-spacing: 7px;
-}
-
-.mainnav {
-    font-family: 'Proza Libre', sans-serif;
-    font-size: 12px;
-    margin-top: 40px;
+    font-size: 27px;
 }
 
 .mainnav_list {
-    list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-right: 40px;
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 12px;
+    margin: 40px 0 0 30px;
+    list-style: none;
+    padding: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
 }
 
 .mainnav_listitem {
-    margin: 0 32px;
+    margin-right: 32px;
+    color: white;
+    text-decoration: none;
+}
+
+.mainnav_listitem:hover {
+    text-decoration: underline;
+}
+
+.me_img {
+    width: 200px;
+    height: 200px;
+    display: block;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 300px;
+    position: relative;
+}
+
+.about {
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    height: 780px;
+    margin-top: 290px;
+    z-index: 1;
+    position: relative;
+    background-image: linear-gradient(to top, #798998, #8e8b9c, #a08e99, #aa9494, #ac9c92);
+}
+
+.about_description {
+    padding-top: 300px;
+}
+
+.portfolio {
+    font-family: 'Proza Libre', sans-serif;
+    width: 100%;
+    height: 780px;
+    background-image: linear-gradient(to top, #ac9c92, #aa9494, #a08e99, #8e8b9c, #798998);
+}
+
+.portfolio_p1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.portfolio_p1-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    float: left;
+    margin-left: 150px;
+}
+
+.portfolio_p1-text {
+    float: right;
+    margin-right: 150px;
 }
