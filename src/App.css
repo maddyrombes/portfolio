@@ -1,32 +1,42 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 @import url('https://fonts.googleapis.com/css?family=Proza+Libre');
 
+.main_background {
+    height: 100%; 
+    width: 100%;
+    position: absolute;
+}
 
-.header {
-    font-family: 'Playfair Display', serif;
+.header_container {
+    position: absolute;
+    right: 0;
+    left: 0;
     text-align: center;
     line-height: 22px;
     margin-top: 40px;
+    color: white;
 }
 
-.header_name {
+.header {
+    font-family: 'Playfair Display', serif;
     letter-spacing: 7px;
-}
-
-.mainnav {
-    font-family: 'Proza Libre', sans-serif;
-    font-size: 12px;
-    margin-top: 40px;
+    font-size: 20px;
 }
 
 .mainnav_list {
-    list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-right: 40px;
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 12px;
+    margin: 40px 0 0 30px;
+    list-style: none;
+    padding: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
 }
 
 .mainnav_listitem {
-    margin: 0 32px;
+    margin-right: 32px;
 }
