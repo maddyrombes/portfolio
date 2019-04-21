@@ -11,22 +11,42 @@ const Portfolio = () => {
             <div className="portfolio_images">
                 <div className="portfolio_1">
                     <img className="portfolio_1_img" src={TileTrial}/>
-                    <p className="portfolio_1_text">Tile Trial</p>
+                    <div className="portfolio_1_text">
+                        <p className="portfolio_text-title">Tile Trial</p>
+                        <p className="portfolio_text-description">A pure Javascript memory game.</p>
+                        <a className="portfolio_text-link" href="https://maddyrombes.github.io/tile-trial/" target="blank">Play the game</a>
+                        <a className="portfolio_text-link" href="https://github.com/maddyrombes/tile-trial" target="blank">View it on Github</a>
+                    </div>
                 </div>
 
                 <div className="portfolio_2">
                     <img className="portfolio_2_img" src={EtsyBoard}/>
-                    <p className="portfolio_2_text">EtsyBoard</p>
+                    <div className="portfolio_2_text">
+                        <p className="portfolio_text-title">EtsyBoard</p>
+                        <p className="portfolio_text-description">A React app using Etsy's API.</p>
+                        <a className="portfolio_text-link" href="https://etsy-board.herokuapp.com/" target="blank">Visit the site</a>
+                        <a className="portfolio_text-link" href="https://github.com/maddyrombes/etsy-app" target="blank">View it on Github</a>
+                    </div>
                 </div>
 
                 <div className="portfolio_3">
                     <img className="portfolio_3_img" src={Iterator} />
-                    <p className="portfolio_3_text">Iterator</p>
+                    <div className="portfolio_3_text">
+                        <p className="portfolio_text-title">Iterator</p>
+                        <p className="portfolio_text-description">A full-stack Medium clone with user authentication.</p>
+                        <a className="portfolio_text-link" href="https://iterator.surge.sh/" target="blank">Visit the site</a>
+                        <a className="portfolio_text-link" href="https://github.com/maddyrombes/Iterator" target="blank">View it on Github</a>
+                    </div>
                 </div>
 
                 <div className="portfolio_4">
                     <img className="portfolio_4_img" src={MariVanna} />
-                    <p className="portfolio_4_text">Mari Vanna</p>
+                    <div className="portfolio_4_text">
+                        <p className="portfolio_text-title">Mari Vanna website redesign</p>
+                        <p className="portfolio_text-description">UX collab</p>
+                        <a className="portfolio_text-link" href="" target="blank">Deployed site coming soon</a>
+                        <a className="portfolio_text-link" href="https://github.com/lizmoy/mari-vanna" target="blank">View it on Github</a>
+                    </div>
                 </div>
             </div>
         </div>
