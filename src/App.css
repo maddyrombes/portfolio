@@ -36,11 +36,11 @@
     left: 0;
     text-align: center;
     position: relative;
-    z-index: 4;
+    z-index: 1;
 }
 
 .mainnav_listitem {
-    margin-right: 32px;
+    margin-right: 45px;
     color: white;
     text-decoration: none;
 }
@@ -70,30 +70,48 @@
     position: relative;
 }
 
+.about_header {
+    font-family: 'Playfair Display', serif;
+    padding-top: 80px;
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+
 .about_description {
-    padding-top: 300px;
+    padding-top: 200px;
 }
 
 .portfolio {
-    font-family: 'Proza Libre', sans-serif;
-    width: 100%;
-    height: 780px;
+    height: 1000px;
 }
 
-.portfolio_p1 {
+.portfolio_header {
+    font-family: 'Playfair Display', serif;
+    padding-top: 40px;
+    letter-spacing: 5px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.portfolio_images {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.portfolio_p1-img {
-    width: 200px;
-    height: 200px;
-    border-radius: 10%;
-    float: left;
-    margin-left: 150px;
+.portfolio_img {
+    width: 400px;
+    margin: 10px;
 }
 
-.portfolio_p1-text {
-    float: right;
-    margin-right: 150px;
+.contact {
+    height: 780px;
+    text-align: center;
+}
+
+.contact_header {
+    font-family: 'Playfair Display', serif;
+    padding-top: 40px;
+    letter-spacing: 5px;
+    font-size: 30px;
 }
