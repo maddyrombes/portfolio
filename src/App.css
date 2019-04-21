@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 @import url('https://fonts.googleapis.com/css?family=Proza+Libre');
 
+.body {
+    background-color: #F5F5F5;
+}
+
+/* MAIN */
+
 .main_background {
     height: 100%; 
     width: 100%;
@@ -50,14 +56,17 @@
 }
 
 .me_img {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 300px;
+    padding-top: 280px;
     position: relative;
 }
+
+
+/* ABOUT */
 
 .about {
     font-family: 'Proza Libre', sans-serif;
@@ -81,9 +90,8 @@
     padding-top: 200px;
 }
 
-.portfolio {
-    height: 1000px;
-}
+
+/* PORTFOLIO */
 
 .portfolio_header {
     font-family: 'Playfair Display', serif;
@@ -99,14 +107,53 @@
     flex-wrap: wrap;
 }
 
-.portfolio_img {
+.portfolio_1_img, .portfolio_2_img, .portfolio_3_img, .portfolio_4_img {
     width: 400px;
-    margin: 10px;
+    margin: 20px;
 }
 
+.portfolio_1_text, .portfolio_2_text, .portfolio_3_text, .portfolio_4_text {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    left: 37%;
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 30px;
+    pointer-events: none;
+}
+
+.portfolio_1, .portfolio_2, .portfolio_3, .portfolio_4 {
+    position: relative;
+}
+
+.portfolio_1_img:hover, .portfolio_2_img:hover, .portfolio_3_img:hover, .portfolio_4_img:hover {
+    opacity: .2;
+}
+
+.portfolio_1_img:hover + .portfolio_1_text {
+    display: block;
+}
+
+.portfolio_2_img:hover + .portfolio_2_text {
+    display: block;
+}
+
+.portfolio_3_img:hover + .portfolio_3_text {
+    display: block;
+}
+
+.portfolio_4_img:hover + .portfolio_4_text {
+    display: block;
+}
+
+
+/* CONTACT */
+
 .contact {
-    height: 780px;
     text-align: center;
+    padding-bottom: 500px;
+    font-family: 'Proza Libre', sans-serif;
 }
 
 .contact_header {
@@ -114,4 +161,9 @@
     padding-top: 40px;
     letter-spacing: 5px;
     font-size: 30px;
+}
+
+.contact_link {
+    margin: 20px;
+    color: black;
 }

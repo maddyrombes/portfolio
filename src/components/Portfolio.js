@@ -10,19 +10,23 @@ const Portfolio = () => {
             <h3 className="portfolio_header">PORTFOLIO</h3>
             <div className="portfolio_images">
                 <div className="portfolio_1">
-                    <img className="portfolio_img" src={TileTrial}/>
+                    <img className="portfolio_1_img" src={TileTrial}/>
+                    <p className="portfolio_1_text">Tile Trial</p>
                 </div>
 
                 <div className="portfolio_2">
-                    <img className="portfolio_img" src={EtsyBoard}/>
+                    <img className="portfolio_2_img" src={EtsyBoard}/>
+                    <p className="portfolio_2_text">EtsyBoard</p>
                 </div>
 
                 <div className="portfolio_3">
-                    <img className="portfolio_img" src={Iterator} />
+                    <img className="portfolio_3_img" src={Iterator} />
+                    <p className="portfolio_3_text">Iterator</p>
                 </div>
 
                 <div className="portfolio_4">
-                    <img className="portfolio_img" src={MariVanna} />
+                    <img className="portfolio_4_img" src={MariVanna} />
+                    <p className="portfolio_4_text">Mari Vanna</p>
                 </div>
             </div>
         </div>
