@@ -19,10 +19,6 @@ const Header = () => {
                 </HashLink>
               </li>
               <li>
-                <HashLink className="mainnav_listitem" to="/#writing">WRITING
-                </HashLink>
-              </li>
-              <li>
                 <HashLink className="mainnav_listitem" to="/#contact">CONTACT
                 </HashLink>
               </li>

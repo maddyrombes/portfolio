@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 @import url('https://fonts.googleapis.com/css?family=Proza+Libre');
 
+.body {
+    background-color: #F5F5F5;
+}
+
+/* MAIN */
+
 .main_background {
     height: 100%; 
     width: 100%;
@@ -35,10 +41,12 @@
     right: 0;
     left: 0;
     text-align: center;
+    position: relative;
+    z-index: 1;
 }
 
 .mainnav_listitem {
-    margin-right: 32px;
+    margin-right: 45px;
     color: white;
     text-decoration: none;
 }
@@ -48,53 +56,164 @@
 }
 
 .me_img {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     display: block;
-    z-index: 1;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 300px;
+    padding-top: 280px;
     position: relative;
 }
+
+
+/* ABOUT */
 
 .about {
     font-family: 'Proza Libre', sans-serif;
     font-size: 20px;
     text-align: center;
     width: 100%;
-    height: 780px;
     margin-top: 290px;
+    margin-bottom: 100px;
     z-index: 1;
     position: relative;
-    background-image: linear-gradient(to top, #798998, #8e8b9c, #a08e99, #aa9494, #ac9c92);
+}
+
+.about_header {
+    font-family: 'Playfair Display', serif;
+    padding-top: 20px;
+    letter-spacing: 5px;
+    font-size: 30px;
 }
 
 .about_description {
-    padding-top: 300px;
+    padding-top: 40px;
 }
 
-.portfolio {
-    font-family: 'Proza Libre', sans-serif;
-    width: 100%;
-    height: 780px;
-    background-image: linear-gradient(to top, #ac9c92, #aa9494, #a08e99, #8e8b9c, #798998);
-}
-
-.portfolio_p1 {
+.about_logos {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 150px;
+    padding-top: 20px;
 }
 
-.portfolio_p1-img {
-    width: 200px;
-    height: 200px;
-    border-radius: 10%;
-    float: left;
-    margin-left: 150px;
+.about_logos-img {
+    margin: 10px;
+    width: 150px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
 }
 
-.portfolio_p1-text {
-    float: right;
-    margin-right: 150px;
+/* PORTFOLIO */
+
+.portfolio_1, .portfolio_2, .portfolio_3, .portfolio_4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio_header {
+    font-family: 'Playfair Display', serif;
+    padding-top: 40px;
+    letter-spacing: 5px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.portfolio_images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 50px;
+}
+
+.portfolio_1_img, .portfolio_2_img, .portfolio_3_img, .portfolio_4_img {
+    width: 400px;
+    margin: 30px;
+}
+
+.portfolio_1_text, .portfolio_2_text, .portfolio_3_text, .portfolio_4_text {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top: 20%;
+    font-family: 'Proza Libre', sans-serif;
+    text-align: center;
+    pointer-events: none;
+}
+
+.portfolio_1_text {
+    left: 16%;
+}
+
+.portfolio_2_text {
+    left: 18%;
+}
+
+.portfolio_4_text {
+    left: 12%;
+}
+
+.portfolio_text-title {
+    font-size: 30px;
+}
+
+.portfolio_text-description {
+    font-size: 20px;
+    font-style: italic;
+    padding-bottom: 15px;
+}
+
+.portfolio_text-link {
+    font-size: 15px;
+    margin: 0 8px;
+    color: black;
+    z-index: 2;
+    font-family: 'Proza Libre', sans-serif;
+    text-align: center;
+}
+
+.portfolio_1, .portfolio_2, .portfolio_3, .portfolio_4 {
+    position: relative;
+}
+
+.portfolio_1_img:hover, .portfolio_2_img:hover, .portfolio_3_img:hover, .portfolio_4_img:hover {
+    opacity: .15;
+}
+
+.portfolio_1_img:hover + .portfolio_1_text,.portfolio_2_img:hover + .portfolio_2_text, .portfolio_3_img:hover + .portfolio_3_text,
+.portfolio_4_img:hover + .portfolio_4_text {
+    display: block;
+}
+
+
+/* CONTACT */
+
+.contact {
+    text-align: center;
+    margin-top: 100px;
+    font-family: 'Proza Libre', sans-serif;
+}
+
+.contact_header {
+    font-family: 'Playfair Display', serif;
+    padding: 20px;
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+
+.contact_description {
+    font-style: italic;
+    margin-bottom: 40px;
+}
+
+.contact_link {
+    margin: 30px;
+    color: black;
+}
+
+.contact_img {
+    width: 100%;
 }

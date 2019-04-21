@@ -1,27 +1,54 @@
 import React from 'react'
-import P1 from '../images/p1.png'
+import TileTrial from '../images/tile-trial.png'
+import EtsyBoard from '../images/etsy-board.png'
+import Iterator from '../images/iterator.png'
+import MariVanna from '../images/mari-vanna.png'
 
 const Portfolio = () => {
     return (      
         <div className="portfolio" id="portfolio">
-        
-            <div className="portfolio_P1">
-                <img className="portfolio_p1-img"src={P1} />
-                <p className="portfolio_p1-text">Tile Trial, a pure Javascript memory game</p>
-            </div>
+            <h3 className="portfolio_header">PORTFOLIO</h3>
+            <div className="portfolio_images">
+                <div className="portfolio_1">
+                    <img className="portfolio_1_img" src={TileTrial}/>
+                    <div className="portfolio_1_text">
+                        <p className="portfolio_text-title">Tile Trial</p>
+                        <p className="portfolio_text-description">A pure Javascript memory game.</p>
+                    </div>
+                    <a className="portfolio_text-link" href="https://maddyrombes.github.io/tile-trial/" target="_blank">Play the game</a>
+                    <a className="portfolio_text-link" href="https://github.com/maddyrombes/tile-trial" target="_blank">View it on Github</a>
+                </div>
 
-            <div className="portfolio_P2">
-            
-            </div>
+                <div className="portfolio_2">
+                    <img className="portfolio_2_img" src={EtsyBoard}/>
+                    <div className="portfolio_2_text">
+                        <p className="portfolio_text-title">EtsyBoard</p>
+                        <p className="portfolio_text-description">A React app using Etsy's API.</p>
+                    </div>
+                    <a className="portfolio_text-link" href="https://etsy-board.herokuapp.com/" target="_blank">Visit the site</a>
+                    <a className="portfolio_text-link" href="https://github.com/maddyrombes/etsy-app" target="_blank">View it on Github</a>
+                </div>
 
-            <div className="portfolio_P3">
-            
-            </div>
+                <div className="portfolio_3">
+                    <img className="portfolio_3_img" src={Iterator} />
+                    <div className="portfolio_3_text">
+                        <p className="portfolio_text-title">Iterator</p>
+                        <p className="portfolio_text-description">A full-stack Medium clone with user authentication.</p>
+                    </div>
+                    <a className="portfolio_text-link" href="https://iterator.surge.sh/" target="_blank">Visit the site</a>
+                    <a className="portfolio_text-link" href="https://github.com/maddyrombes/Iterator" target="_blank">View it on Github</a>
+                </div>
 
-            <div className="portfolio_UXcollab">
-            
+                <div className="portfolio_4">
+                    <img className="portfolio_4_img" src={MariVanna} />
+                    <div className="portfolio_4_text">
+                        <p className="portfolio_text-title">Mari Vanna restaurant <br/> website redesign</p>
+                        <p className="portfolio_text-description">UX collab</p>
+                    </div>
+                    <a className="portfolio_text-link" href="" target="_blank">Deployed site coming soon</a>
+                    <a className="portfolio_text-link" href="https://github.com/lizmoy/mari-vanna" target="_blank">View it on Github</a>
+                </div>
             </div>
-
         </div>
     )
 }
