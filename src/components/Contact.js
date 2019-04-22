@@ -1,14 +1,13 @@
 import React from 'react'
-import laptop from '../images/laptop.png'
+import laptopContact from '../images/laptop-contact.JPG'
 
 const Contact = () => {
     return (      
         <div className="contact" id="contact">
             <h3 className="contact_header">CONTACT</h3>
-            <p className="contact_description">Get in touch!</p>
             <a className="contact_link" href="mailto:madelinerombes@gmail.com" target="blank">EMAIL ME</a>
             <a className="contact_link" href="https://www.linkedin.com/in/maddyrombes/" target="blank">LINKEDIN</a>
-            <img className="contact_img" src={laptop} alt="laptop" />
+            <img className="contact_laptop" alt="laptop" src={laptopContact} />
         </div>
     )
 }
