@@ -195,6 +195,7 @@
     text-align: center;
     margin-top: 100px;
     font-family: 'Proza Libre', sans-serif;
+    position: absolute;
 }
 
 .contact_header {
@@ -212,8 +213,23 @@
 .contact_link {
     margin: 30px;
     color: black;
+    position: relative;
 }
 
 .contact_img {
     width: 100%;
+}
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 375px) {
+    .header {
+        line-height: 50px;
+    }
+
+    .portfolio_1_img, .portfolio_2_img, .portfolio_3_img, .portfolio_4_img {
+        width: 375px;
+    }
+
 }
