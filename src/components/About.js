@@ -19,7 +19,7 @@ const About = () => {
     return (      
         <div className="about" id="about">
             <h3 className="about_header">ABOUT</h3>
-            <p className="about_description">Web Developer with a passion for beautiful, responsive products.</p>
+            <p className="about_description">Full stack web developer with a passion for beautiful, responsive products.<br/>Always learning.</p>
             <div className="about_logos">
                 <img className="about_logos-img"  src={javascript} />
                 <img className="about_logos-img"  src={react} />
