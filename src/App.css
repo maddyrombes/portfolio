@@ -55,17 +55,6 @@
     text-decoration: underline;
 }
 
-.me_img {
-    width: 300px;
-    height: 300px;
-    /* display: block; */
-    display: none;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 280px;
-    position: relative;
-}
-
 
 /* ABOUT */
 
@@ -95,7 +84,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     margin: 0 150px;
     padding-top: 20px;
 }
@@ -106,6 +95,36 @@
     max-height: 150px;
     width: auto;
     height: auto;
+}
+
+.adobe, .ruby, .heroku {
+    width: 120px;
+    max-height: 120px;
+    width: auto;
+    height: auto;
+}
+
+.css, .html {
+    width: 130px;
+    max-height: 130px;
+    width: auto;
+    height: auto;
+}
+
+.github {
+    width: 170px;
+    max-height: 170px;
+    width: auto;
+    height: auto;
+}
+
+.me_img {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
 }
 
 /* PORTFOLIO */
@@ -195,8 +214,9 @@
 .contact {
     text-align: center;
     margin-top: 100px;
+    margin-bottom: 300px;
     font-family: 'Proza Libre', sans-serif;
-    position: absolute;
+    position: relative;
 }
 
 .contact_header {
@@ -206,19 +226,10 @@
     font-size: 30px;
 }
 
-.contact_description {
-    font-style: italic;
-    margin-bottom: 40px;
-}
-
 .contact_link {
     margin: 30px;
     color: black;
     position: relative;
-}
-
-.contact_img {
-    width: 100%;
 }
 
 
