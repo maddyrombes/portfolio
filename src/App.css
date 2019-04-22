@@ -125,6 +125,7 @@
     margin-left: auto;
     margin-right: auto;
     position: relative;
+    padding: 30px 0;
 }
 
 /* PORTFOLIO */
@@ -214,7 +215,6 @@
 .contact {
     text-align: center;
     margin-top: 100px;
-    margin-bottom: 300px;
     font-family: 'Proza Libre', sans-serif;
     position: relative;
 }
@@ -230,6 +230,15 @@
     margin: 30px;
     color: black;
     position: relative;
+}
+
+.contact_laptop {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 
