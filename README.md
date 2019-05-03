@@ -1,3 +1,1 @@
-### Maddy's Portfolio
-
-## React.js, HTML, and CSS
+## Built with React.js, HTML, and CSS
