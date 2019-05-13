@@ -7,6 +7,7 @@ const Header = () => {
 
           <div className="header">
             <h1>MADDY ROMBES</h1>
+            <h2 className="mainnav_h2">Software Engineer</h2>
           </div>
 
           <ul className="mainnav_list">
