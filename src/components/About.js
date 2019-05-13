@@ -21,23 +21,23 @@ const About = () => {
         <div className="about" id="about">
             <h3 className="about_header">ABOUT</h3>
             <p className="about_description">Full stack web developer with a passion for beautiful, responsive products.<br/>Always learning.</p>
-            <img className="me_img" src={me} />
+            <img className="me_img" src={me} alt="maddy" />
             <div className="about_logos">
-                <img className="about_logos-img" src={javascript} />
-                <img className="about_logos-img css" src={css} />
-                <img className="about_logos-img html" src={html} />
-                <img className="about_logos-img" src={react} />
-                <img className="about_logos-img" src={git} />
-                <img className="about_logos-img github" src={github} />
-                <img className="about_logos-img heroku" src={heroku} />
-                <img className="about_logos-img" src={postgresql} />
-                <img className="about_logos-img" src={sequelize} />
-                <img className="about_logos-img" src={rails} />
-                <img className="about_logos-img ruby" src={ruby} />
-                <img className="about_logos-img" src={zeplin} />
-                <img className="about_logos-img adobe" src={photoshop} />
-                <img className="about_logos-img adobe" src={illustrator} />
-                <img className="about_logos-img adobe" src={indesign} />
+                <img alt="js" className="about_logos-img" src={javascript} />
+                <img alt="css" className="about_logos-img css" src={css} />
+                <img alt="html" className="about_logos-img html" src={html} />
+                <img alt="react" className="about_logos-img" src={react} />
+                <img alt="git" className="about_logos-img" src={git} />
+                <img alt="github" className="about_logos-img github" src={github} />
+                <img alt="heroku" className="about_logos-img heroku" src={heroku} />
+                <img alt="psql" className="about_logos-img" src={postgresql} />
+                <img alt="sequelize" className="about_logos-img" src={sequelize} />
+                <img alt="rails" className="about_logos-img" src={rails} />
+                <img alt="ruby" className="about_logos-img ruby" src={ruby} />
+                <img alt="zeplin" className="about_logos-img" src={zeplin} />
+                <img alt="ps" className="about_logos-img adobe" src={photoshop} />
+                <img alt="illustrator" className="about_logos-img adobe" src={illustrator} />
+                <img alt="indesign" className="about_logos-img adobe" src={indesign} />
             </div>
         </div>
     )
