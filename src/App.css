@@ -231,21 +231,41 @@
     font-size: 30px;
 }
 
-.contact_link {
-    margin: 30px;
-    color: black;
-    position: relative;
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 100px;
 }
 
-.contact_laptop {
-    width: 70%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+::placeholder {
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 12px;
 }
 
+.name-input, .email-input {
+    border-radius: 10px;
+    height: 25px;
+    padding: 2px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.message-input {
+    border-radius: 10px;
+    height: 200px;
+}
+
+.contact-submit {
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 16px;
+   
+}
 
 /* MEDIA QUERIES */
 
@@ -257,5 +277,4 @@
     .portfolio_1_img, .portfolio_2_img, .portfolio_3_img, .portfolio_4_img {
         width: 375px;
     }
-
 }
