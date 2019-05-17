@@ -1,9 +1,13 @@
 import React from 'react'
+import butterfly from '../images/butterfly.JPG'
+
 
 const Contact = () => {
     return (      
         <div className="contact" id="contact">
             <h3 className="contact_header">CONTACT</h3>
+
+            <img className="butterfly" src={butterfly} />
 
             <form className="contact-form">
                 <input className="name-input" type="text" placeholder="Name"/>
