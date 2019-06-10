@@ -137,7 +137,7 @@ html{scroll-behavior: smooth}
 
 /* PORTFOLIO */
 
-.portfolio_1, .portfolio_2, .portfolio_3, .portfolio_4 {
+.portfolio_1, .portfolio_2, .portfolio_3, .portfolio_4, .portfolio_5 {
     display: flex;
     flex-direction: column;
 }
@@ -157,12 +157,12 @@ html{scroll-behavior: smooth}
     margin: 0 50px;
 }
 
-.portfolio_1_img, .portfolio_2_img, .portfolio_3_img, .portfolio_4_img {
+.portfolio_1_img, .portfolio_2_img, .portfolio_3_img, .portfolio_4_img, .portfolio_5_img {
     width: 400px;
     margin: 30px;
 }
 
-.portfolio_1_text, .portfolio_2_text, .portfolio_3_text, .portfolio_4_text {
+.portfolio_1_text, .portfolio_2_text, .portfolio_3_text, .portfolio_4_text, .portfolio_5_text {
     display: none;
     position: absolute;
     z-index: 2;
@@ -184,6 +184,10 @@ html{scroll-behavior: smooth}
     left: 12%;
 }
 
+.portfolio_5_text {
+  left: 12%;
+}
+
 .portfolio_text-title {
     font-size: 30px;
 }
@@ -203,16 +207,16 @@ html{scroll-behavior: smooth}
     text-align: center;
 }
 
-.portfolio_1, .portfolio_2, .portfolio_3, .portfolio_4 {
+.portfolio_1, .portfolio_2, .portfolio_3, .portfolio_4, .portfolio_5 {
     position: relative;
 }
 
-.portfolio_1_img:hover, .portfolio_2_img:hover, .portfolio_3_img:hover, .portfolio_4_img:hover {
+.portfolio_1_img:hover, .portfolio_2_img:hover, .portfolio_3_img:hover, .portfolio_4_img:hover, .portfolio_5_img:hover {
     opacity: .15;
 }
 
-.portfolio_1_img:hover + .portfolio_1_text,.portfolio_2_img:hover + .portfolio_2_text, .portfolio_3_img:hover + .portfolio_3_text,
-.portfolio_4_img:hover + .portfolio_4_text {
+.portfolio_1_img:hover + .portfolio_1_text, .portfolio_2_img:hover + .portfolio_2_text, .portfolio_3_img:hover + .portfolio_3_text,
+.portfolio_4_img:hover + .portfolio_4_text, .portfolio_5_img:hover + .portfolio_5_text {
     display: block;
 }
 
@@ -236,7 +240,7 @@ html{scroll-behavior: smooth}
     letter-spacing: 5px;
     font-size: 30px;
 }
-
+  
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -244,8 +248,6 @@ html{scroll-behavior: smooth}
     justify-content: center;
     margin: 0 auto;
     margin-bottom: 100px;
-    /* position: fixed;
-    z-index: 1; */
 }
 
 ::placeholder {
