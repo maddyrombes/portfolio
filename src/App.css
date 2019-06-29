@@ -3,6 +3,8 @@
 html{scroll-behavior: smooth}
 
 
+
+
 .body {
     background-color: #F5F5F5;
 }
@@ -224,8 +226,10 @@ html{scroll-behavior: smooth}
 /* CONTACT */
 
 .contact {
+  background: url('./images/butterfly.JPG') center/cover no-repeat;
     text-align: center;
-    margin-top: 100px;
+    margin: 100px;
+    padding: 100px;
     font-family: 'Proza Libre', sans-serif;
     position: relative;
 }
@@ -261,11 +265,14 @@ html{scroll-behavior: smooth}
     padding: 2px;
     margin-bottom: 15px;
     margin-top: 5px;
+    box-shadow: 1px 5px 5px -5px rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.85);
 }
 
 .message-input {
     border-radius: 8px;
     height: 200px;
+    box-shadow: 1px 5px 5px -5px rgba(0, 0, 0, 0.5);
 }
 
 .contact-submit {
@@ -276,7 +283,8 @@ html{scroll-behavior: smooth}
     font-size: 16px;
     border: none;
     cursor: pointer;
-    box-shadow: 1px 5px 5px -5px rgba(0, 0, 0, 0.5)
+    box-shadow: 1px 5px 5px -5px rgba(0, 0, 0, 0.5);
+    transition: background-color 150ms ease-out;
 }
 
 /* MEDIA QUERIES */
