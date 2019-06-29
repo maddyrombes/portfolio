@@ -227,15 +227,10 @@ html{scroll-behavior: smooth}
 
 .contact {
   background: url('./images/butterfly.JPG') center/cover no-repeat;
-    text-align: center;
-    margin: 100px;
-    padding: 100px;
-    font-family: 'Proza Libre', sans-serif;
-    position: relative;
-}
-
-.butterfly {
-    width: 80%;
+  text-align: center;
+  margin-top: 150px;
+  padding: 100px;
+  font-family: 'Proza Libre', sans-serif;
 }
 
 .contact_header {
@@ -272,6 +267,7 @@ html{scroll-behavior: smooth}
 .message-input {
     border-radius: 8px;
     height: 200px;
+    background: rgba(255, 255, 255, 0.85);
     box-shadow: 1px 5px 5px -5px rgba(0, 0, 0, 0.5);
 }
 
@@ -285,6 +281,19 @@ html{scroll-behavior: smooth}
     cursor: pointer;
     box-shadow: 1px 5px 5px -5px rgba(0, 0, 0, 0.5);
     transition: background-color 150ms ease-out;
+}
+
+.footer {
+  width: 100%;
+  height: 150px;
+  text-align: center;
+  line-height: 100px;
+}
+
+.footer-link {
+  margin: 0 10px;
+  color: black;
+  font-size: 18px;
 }
 
 /* MEDIA QUERIES */
