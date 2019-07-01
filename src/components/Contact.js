@@ -1,21 +1,38 @@
 import React from 'react'
 
 
-const Contact = () => {
-  return (
-    <div className="contact" id="contact">
-      <h3 className="contact_header">CONTACT</h3>
+class Contact extends React.Component {
+  constructor() {
+    super()
+    this.state = {
+      name: "",
+      email: "",
+      message: ""
+    }
+  }
 
-      {/* <img className="butterfly" src={butterfly} /> */}
+  handleChange = (e) => {
+    this.setState({
+      [e.target.name]: e.target.value
+    })
+  }
 
-      <form className="contact-form">
-        <input className="name-input" type="text" name="name" placeholder="Name" required />
-        <input className="email-input" type="text" name="email" placeholder="Email" required />
-        <input className="message-input" type="text" name="message" placeholder="Your message" required />
-        <input type="submit" className="contact-submit" value="Submit" />
-      </form>
-    </div>
-  )
+  handleSubmit = () => {
+    window.open(`mailto:madelinerombes@gmail.com?subject="Greetings from ${this.state.name}"&body=${this.state.message}`);
+  }
+
+  render() {
+    return (
+      <div className="contact" id="contact" >
+        <h3 className="contact_header">CONTACT</h3>
+        <form className="contact-form" onSubmit={this.handleSubmit} >
+          <input onChange={this.handleChange} className="name-input" type="text" name="name" placeholder="Name" required />
+          <input onChange={this.handleChange} className="message-input" type="text" name="message" placeholder="Your message" required />
+          <input type="submit" className="contact-submit" value="Submit" />
+        </form>
+      </div >
+    )
+  }
 }
 
 export default Contact

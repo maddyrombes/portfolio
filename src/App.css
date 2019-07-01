@@ -254,7 +254,7 @@ html{scroll-behavior: smooth}
     font-size: 12px;
 }
 
-.name-input, .email-input {
+.name-input{
     border-radius: 8px;
     height: 25px;
     padding: 2px;
