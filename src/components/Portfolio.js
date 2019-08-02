@@ -44,7 +44,7 @@ const Portfolio = () => {
           <img alt="mari vanna" className="portfolio_4_img" src={MariVanna} />
           <div className="portfolio_4_text">
             <p className="portfolio_text-title">Mari Vanna restaurant <br /> website redesign</p>
-            <p className="portfolio_text-description">UX collab</p>
+            <p className="portfolio_text-description">A collaboration with <br /> UX design students.</p>
           </div>
           <a className="portfolio_text-link" href="https://mari-vanna.surge.sh/" target="blank">Visit the site</a>
           <a className="portfolio_text-link" href="https://github.com/lizmoy/mari-vanna" target="blank">View it on Github</a>
