@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 class Contact extends React.Component {
   constructor() {
     super()
@@ -10,6 +9,8 @@ class Contact extends React.Component {
       message: ""
     }
   }
+
+
 
   handleChange = (e) => {
     this.setState({
@@ -25,9 +26,10 @@ class Contact extends React.Component {
     return (
       <div className="contact" id="contact" >
         <h3 className="contact_header">CONTACT</h3>
+
         <form className="contact-form" onSubmit={this.handleSubmit} >
           <input onChange={this.handleChange} className="name-input" type="text" name="name" placeholder="Name" required />
-          <input onChange={this.handleChange} className="message-input" type="text" name="message" placeholder="Your message" required />
+          <textarea onChange={this.handleChange} className="message-input" type="text" name="message" placeholder="Your message" required ></textarea>
           <input type="submit" className="contact-submit" value="Submit" />
         </form>
       </div >
