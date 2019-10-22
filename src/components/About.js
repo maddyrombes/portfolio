@@ -22,7 +22,7 @@ const About = () => {
     <div className="about" id="about">
       <h3 className="about_header">ABOUT</h3>
       <p className="about_description">Full stack web developer with a passion for beautiful, responsive products.<br/>Always learning.</p>
-      <img className="me_img" src={me} alt="maddy" />
+      <a href="https://github.com/maddyrombes" target="blank"><img className="me_img" src={me} alt="maddy" /></a>
       <div className="about_logos">
         <Logo alt="javascript" className="about_logos-img" src={javascript} title="Javascript" />
         <Logo alt="css" className="about_logos-img" src={css} title="CSS3" />
