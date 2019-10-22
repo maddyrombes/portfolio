@@ -1,184 +1,184 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
-@import url('https://fonts.googleapis.com/css?family=Proza+Libre');
-html{scroll-behavior: smooth}
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+@import url("https://fonts.googleapis.com/css?family=Proza+Libre");
+html {
+  scroll-behavior: smooth;
+}
 
 .body {
-    background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 
 /* MAIN */
 
 .main_background {
-    width: 100%;
-    top: 0;
+  width: 100%;
+  top: 0;
 }
 
 .header_container {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    text-align: center;
-    line-height: 22px;
-    margin-top: 20px;
-    color: black;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+  line-height: 22px;
+  margin-top: 20px;
+  color: black;
 }
 
 .header {
-    font-family: 'Playfair Display', serif;
-    letter-spacing: 7px;
-    font-size: 27px;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 7px;
+  font-size: 27px;
 }
 
 .mainnav_list {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-family: 'Proza Libre', sans-serif;
-    font-size: 12px;
-    margin: 40px 20px 0 30px;
-    list-style: none;
-    text-align: center;
-    position: relative;
-    z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: "Proza Libre", sans-serif;
+  font-size: 12px;
+  margin: 40px 20px 0 30px;
+  list-style: none;
+  text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .mainnav_listitem {
-    margin-right: 45px;
-    color: black;
-    text-decoration: none;
-    font-size: 14px;
+  margin-right: 45px;
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
 }
 
 .mainnav_listitem:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .mainnav_h2 {
-    font-size: 25px;
-    letter-spacing: 2px;
+  font-size: 25px;
+  letter-spacing: 2px;
 }
-
 
 /* ABOUT */
 
 .about {
-    font-family: 'Proza Libre', sans-serif;
-    font-size: 20px;
-    text-align: center;
-    width: 100%;
-    margin-top: 90px;
-    margin-bottom: 100px;
-    z-index: 1;
-    position: relative;
+  font-family: "Proza Libre", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+  margin-top: 90px;
+  margin-bottom: 100px;
+  z-index: 1;
+  position: relative;
 }
 
 .about_header {
-    font-family: 'Playfair Display', serif;
-    padding-top: 20px;
-    letter-spacing: 5px;
-    font-size: 30px;
+  font-family: "Playfair Display", serif;
+  padding-top: 20px;
+  letter-spacing: 5px;
+  font-size: 30px;
 }
 
 .about_description {
-    padding-top: 40px;
+  padding-top: 40px;
+  line-height: 40px;
 }
 
 .about_logos {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 150px;
-    padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 0 150px;
+  padding-top: 20px;
 }
 
 .about_logos-img {
-    margin: 10px;
-    width: 150px;
-    max-height: 150px;
-    width: auto;
-    height: auto;
+  margin: 30px;
+  height: 80px;
+  width: auto;
 }
 
-.adobe, .ruby, .heroku {
-    width: 120px;
-    max-height: 120px;
-    width: auto;
-    height: auto;
+.logo-title {
+  font-size: 14px;
 }
 
-.css, .html {
-    width: 130px;
-    max-height: 130px;
-    width: auto;
-    height: auto;
-}
-
-.github {
-    width: 170px;
-    max-height: 170px;
-    width: auto;
-    height: auto;
+.jquery, .express, .rails {
+  height: 40px;
 }
 
 .me_img {
-    width: 200px;
-    height: 200px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    padding: 30px 0;
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding: 30px 0;
+  border-radius: 100%;
 }
 
 /* PORTFOLIO */
 
-.portfolio_1, .portfolio_2, .portfolio_3, .portfolio_4, .portfolio_5 {
-    display: flex;
-    flex-direction: column;
+.portfolio_1,
+.portfolio_2,
+.portfolio_3,
+.portfolio_4,
+.portfolio_5 {
+  display: flex;
+  flex-direction: column;
 }
 
 .portfolio_header {
-    font-family: 'Playfair Display', serif;
-    padding-top: 40px;
-    letter-spacing: 5px;
-    font-size: 30px;
-    text-align: center;
+  font-family: "Playfair Display", serif;
+  padding-top: 40px;
+  letter-spacing: 5px;
+  font-size: 30px;
+  text-align: center;
 }
 
 .portfolio_images {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 0 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 50px;
 }
 
-.portfolio_1_img, .portfolio_2_img, .portfolio_3_img, .portfolio_4_img, .portfolio_5_img {
-    width: 400px;
-    margin: 30px;
+.portfolio_1_img,
+.portfolio_2_img,
+.portfolio_3_img,
+.portfolio_4_img,
+.portfolio_5_img {
+  width: 400px;
+  margin: 30px;
 }
 
-.portfolio_1_text, .portfolio_2_text, .portfolio_3_text, .portfolio_4_text, .portfolio_5_text {
-    display: none;
-    position: absolute;
-    z-index: 2;
-    top: 20%;
-    font-family: 'Proza Libre', sans-serif;
-    text-align: center;
-    pointer-events: none;
+.portfolio_1_text,
+.portfolio_2_text,
+.portfolio_3_text,
+.portfolio_4_text,
+.portfolio_5_text {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  top: 20%;
+  font-family: "Proza Libre", sans-serif;
+  text-align: center;
+  pointer-events: none;
 }
 
 .portfolio_1_text {
-    left: 16%;
+  left: 16%;
 }
 
 .portfolio_2_text {
-    left: 18%;
+  left: 18%;
 }
 
 .portfolio_4_text {
-    left: 12%;
+  left: 12%;
 }
 
 .portfolio_5_text {
@@ -186,129 +186,139 @@ html{scroll-behavior: smooth}
 }
 
 .portfolio_text-title {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .portfolio_text-description {
-    font-size: 20px;
-    font-style: italic;
-    padding-bottom: 15px;
+  font-size: 20px;
+  font-style: italic;
+  padding-bottom: 15px;
 }
 
 .portfolio_text-link {
-    font-size: 15px;
-    margin: 3px 8px;
-    color: black;
-    z-index: 2;
-    font-family: 'Proza Libre', sans-serif;
-    text-align: center;
-    text-decoration: none;
+  font-size: 15px;
+  margin: 3px 8px;
+  color: black;
+  z-index: 2;
+  font-family: "Proza Libre", sans-serif;
+  text-align: center;
+  text-decoration: none;
 }
 
 .portfolio_text-link:hover {
   text-decoration: underline;
 }
 
-.portfolio_1, .portfolio_2, .portfolio_3, .portfolio_4, .portfolio_5 {
-    position: relative;
+.portfolio_1,
+.portfolio_2,
+.portfolio_3,
+.portfolio_4,
+.portfolio_5 {
+  position: relative;
 }
 
-.portfolio_1_img:hover, .portfolio_2_img:hover, .portfolio_3_img:hover, .portfolio_4_img:hover, .portfolio_5_img:hover {
-    opacity: .15;
-    transition: opacity 300ms cubic-bezier(.33,0,.2,1);
+.portfolio_1_img:hover,
+.portfolio_2_img:hover,
+.portfolio_3_img:hover,
+.portfolio_4_img:hover,
+.portfolio_5_img:hover {
+  opacity: 0.15;
+  transition: opacity 300ms cubic-bezier(0.33, 0, 0.2, 1);
 }
 
-.portfolio_1_img:hover + .portfolio_1_text, .portfolio_2_img:hover + .portfolio_2_text, .portfolio_3_img:hover + .portfolio_3_text,
-.portfolio_4_img:hover + .portfolio_4_text, .portfolio_5_img:hover + .portfolio_5_text {
-    display: block;
+.portfolio_1_img:hover + .portfolio_1_text,
+.portfolio_2_img:hover + .portfolio_2_text,
+.portfolio_3_img:hover + .portfolio_3_text,
+.portfolio_4_img:hover + .portfolio_4_text,
+.portfolio_5_img:hover + .portfolio_5_text {
+  display: block;
 }
-
 
 /* CONTACT */
 
 .contact {
-  background: url('./images/butterfly.JPG') center/cover no-repeat;
+  background: url("./images/butterfly.JPG") center/cover no-repeat;
   text-align: center;
   margin-top: 150px;
   padding: 100px;
-  font-family: 'Proza Libre', sans-serif;
+  font-family: "Proza Libre", sans-serif;
 }
 
 .contact_header {
-    font-family: 'Playfair Display', serif;
-    padding: 20px;
-    letter-spacing: 5px;
-    font-size: 30px;
+  font-family: "Playfair Display", serif;
+  padding: 20px;
+  letter-spacing: 5px;
+  font-size: 30px;
 }
-  
+
 .contact-form {
-    display: flex;
-    flex-direction: column;
-    width: 350px;
-    justify-content: center;
-    margin: 0 auto;
-    margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 100px;
 }
 
 ::placeholder {
-    font-family: 'Proza Libre', sans-serif;
-    font-size: 16px;
-    color: rgb(40, 40, 40);
-    letter-spacing: 0.5px;;
+  font-family: "Proza Libre", sans-serif;
+  font-size: 16px;
+  color: rgb(40, 40, 40);
+  letter-spacing: 0.5px;
 }
 
 .name-input {
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    outline: none;
-    display: block;
-    width: 100%;
-    border: none;
-    background: transparent;
-    margin-bottom: 25px;
-    font: 16px 'Proza Libre', sans-serif;
-    height: 45px;
-    background-color: rgba(255,255,255, 0.7);
-    border-radius: 10px;
-    padding: 20px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  outline: none;
+  display: block;
+  width: 100%;
+  border: none;
+  background: transparent;
+  margin-bottom: 25px;
+  font: 16px "Proza Libre", sans-serif;
+  height: 45px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  padding: 20px;
 }
 
 .message-input {
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    outline: none;
-    display: block;
-    width: 100%;
-    max-width: 350px;
-    border: none;
-    background: transparent;
-    margin-bottom: 10px;
-    font: 16px 'Proza Libre', sans-serif;
-    height: 180px;
-    resize: both;
-    background-color: rgba(255,255,255, 0.7);
-    border-radius: 10px;
-    padding: 20px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  outline: none;
+  display: block;
+  width: 100%;
+  max-width: 350px;
+  border: none;
+  background: transparent;
+  margin-bottom: 10px;
+  font: 16px "Proza Libre", sans-serif;
+  height: 180px;
+  resize: both;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  padding: 20px;
 }
 
 .contact-submit {
-    width: 100px;
-    margin: 0 auto;
-    margin-top: 20px;
-    font-family: 'Proza Libre', sans-serif;
-    font-size: 16px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    box-shadow: 1px 5px 5px -5px rgba(0, 0, 0, 0.5);
-    transition: background-color 150ms ease-out;
-    padding: 12px 20px;
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-family: "Proza Libre", sans-serif;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 1px 5px 5px -5px rgba(0, 0, 0, 0.5);
+  transition: background-color 150ms ease-out;
+  padding: 12px 20px;
 }
 
 .contact-submit:hover {
-  background-color: #C99D27;
+  background-color: #c99d27;
   color: white;
 }
 
@@ -336,15 +346,17 @@ html{scroll-behavior: smooth}
   margin: 30px 0;
 }
 
-
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 375px) {
-    .header {
-        line-height: 50px;
-    }
+  .header {
+    line-height: 50px;
+  }
 
-    .portfolio_1_img, .portfolio_2_img, .portfolio_3_img, .portfolio_4_img {
-        width: 375px;
-    }
+  .portfolio_1_img,
+  .portfolio_2_img,
+  .portfolio_3_img,
+  .portfolio_4_img {
+    width: 375px;
+  }
 }
