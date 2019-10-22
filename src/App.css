@@ -99,6 +99,7 @@ html {
   margin: 30px;
   height: 80px;
   width: auto;
+  transition: all .2s ease-in-out;
 }
 
 .logo-title {
@@ -107,6 +108,11 @@ html {
 
 .jquery, .express, .rails {
   height: 40px;
+  transition: all .1s ease-in-out;
+}
+
+.logo:hover img {
+  transform: scale(1.2);
 }
 
 .me_img {
