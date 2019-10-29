@@ -8,7 +8,7 @@ const projects = [
     description: 'A pure Javascript memory game.',
     deployedLink: 'https://maddyrombes.github.io/tile-trial/',
     githubLink: 'https://github.com/maddyrombes/tile-trial',
-    imagePath: '../images/tile-trial.png'
+    imagePath: `${require('../images/tile-trial.png')}`
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ const projects = [
     description: 'A React app using Etsy\'s API.',
     deployedLink: 'https://etsy-board.herokuapp.com/',
     githubLink: 'https://github.com/maddyrombes/etsy-app',
-    imagePath: '../images/etsy-board.png'
+    imagePath: `${require('../images/etsy-board.png')}`
   },
   {
     id: 3,
@@ -24,15 +24,15 @@ const projects = [
     description: 'A full-stack Medium clone with user authentication.',
     deployedLink: 'https://iterator.surge.sh/',
     githubLink: 'https://github.com/maddyrombes/Iterator',
-    imagePath: '../images/iterator.png'
+    imagePath: `${require('../images/iterator.png')}`
   },
   {
     id: 4,
-    title: 'Mari Vanna site redesign',
+    title: 'Mari Vanna',
     description: 'A collaboration with UX design students.',
     deployedLink: 'https://mari-vanna.surge.sh/',
     githubLink: 'https://github.com/lizmoy/mari-vanna',
-    imagePath: '../images/mari-vanna.png'
+    imagePath: `${require('../images/mari-vanna.png')}`
   },
   {
     id: 5,
@@ -40,12 +40,11 @@ const projects = [
     description: 'A mental health tracker created with React and Ruby on Rails.',
     deployedLink: 'http://elastic-vessel.surge.sh/',
     githubLink: 'https://github.com/maddyrombes/well-rounded',
-    imagePath: '../images/well-rounded.png'
+    imagePath: `${require('../images/well-rounded.png')}`
   },
 ]
 
 const Portfolio = () => {
-
   return (
     <div className="portfolio" id="portfolio">
       <h3 className="portfolio_header">PORTFOLIO</h3>

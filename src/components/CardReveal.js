@@ -10,43 +10,60 @@ const Container = styled.div(props => ({
   margin: '50px',
   fontFamily: "Proza Libre, sans-serif",
   textAlign: 'center',
-  backgroundImage: `url(${props.img})`,
+  backgroundImage: `url(${props.image})`,
   backgroundSize: 'cover',
   '-webkit-box-shadow': '5px 5px 10px -4px rgba(0,0,0,0.8)',
   '-moz-box-shadow': '5px 5px 10px -4px rgba(0,0,0,0.8)',
-  boxShadow: '5px 5px 10px -4px rgba(0,0,0,0.8)'
-}))
+  boxShadow: '5px 5px 10px -4px rgba(0,0,0,0.8)',
+}));
 
 const CardInfo = styled.div(props => ({
   background: 'white',
   position: 'absolute',
   width: '350px',
-  height: props.openStatus ? '380px' : '100px',
-  marginTop: props.openStatus ? '0px' : '280px',
+  height: props.openStatus ? '360px' : '100px',
+  marginTop: props.openStatus ? '0' : '280px',
+  paddingTop: props.openStatus ? '20px' : '0',
   display: 'flex',
   flexDirection: 'row',
   justifyContent: 'space-between',
-  alignItems: 'center',
+  alignItems: props.openStatus ? 'flex-start' : 'center',
   cursor: 'pointer',
   '-webkit-user-select': 'none',       
   '-moz-user-select': 'none',
   '-ms - user - select': 'none',
   userSelect: 'none',
-  transition: 'all .2s',
+  transition: 'all .3s',
+  lineHeight: '20px',
+  overflow: 'hidden',
 }));
 
 const CardInfoLeft = styled.div(() => ({
   textAlign: 'left',
-  paddingLeft: '25px'
+  paddingLeft: '25px',
+  width: '250px',
 }));
 
-const Link = styled.h4(props => ({
+const H3 = styled.h3(props => ({
+  fontSize: '22px',
+  marginBottom: props.openStatus ? '20px' : '0px',
+}));
+
+const H4 = styled.h4(() => ({
+  margin: '8px 0 10px 0',
+}));
+
+const Link = styled.h5(props => ({
   display: props.openStatus ? 'block' : 'none',
+  margin: '0',
 }));
 
+const A = styled.a(() => ({
+  color: '#009e9b',
+  textDecoration: 'none',
+}));
 
 const CardReveal = ({ title, description, deployedLink, githubLink,imagePath }) => {
-
   const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = () => {
@@ -55,13 +72,13 @@ const CardReveal = ({ title, description, deployedLink, githubLink,imagePath }) 
   };
 
   return (
-    <Container img={imagePath}>
+    <Container image={imagePath}>
       <CardInfo onClick={handleClick} openStatus={isOpen} >
         <CardInfoLeft>
-          <h3>{title}</h3>
-          <h4>{description}</h4>
-          <Link openStatus={isOpen}>View the deployed project <a href={deployedLink} target="blank">here</a>.</Link>
-          <Link openStatus={isOpen}>View it on Github <a href={githubLink} target="blank">here</a>.</Link>
+          <H3 openStatus={isOpen}>{title}</H3>
+          <H4>{description}</H4>
+          <Link openStatus={isOpen}>View the deployed project <A href={deployedLink} target="blank">here</A>.</Link>
+          <Link openStatus={isOpen}>View it on Github <A href={githubLink} target="blank">here</A>.</Link>
         </CardInfoLeft>
         <img className="card-hamburger" src={ isOpen ? exit : hamburger } alt="open more" />
       </CardInfo>
