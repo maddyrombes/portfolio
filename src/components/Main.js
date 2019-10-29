@@ -5,7 +5,7 @@ import Header from './Header'
 const Main = () => {
     return (
       <div>
-        <img className="main_background" alt="bridge" src={laptop} />
+        <img className="main_background" alt="laptop on sill" src={laptop} />
         <Header />
       </div>
     )
