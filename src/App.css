@@ -14,10 +14,11 @@ html {
   padding-right: 20px;
 } 
 
+
 /* MAIN */
 
 .main_background {
-  width: 100%;
+  width: 100vw;
   top: 0;
 }
 
@@ -66,6 +67,7 @@ html {
   font-size: 25px;
   letter-spacing: 2px;
 }
+
 
 /* ABOUT */
 
@@ -116,7 +118,6 @@ html {
 
 .jquery, .express, .rails {
   height: 40px;
-  transition: all .1s ease-in-out;
 }
 
 .logo:hover img {
@@ -130,7 +131,6 @@ html {
 .me_img {
   width: 200px;
   height: 200px;
-  display: block;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -143,16 +143,8 @@ html {
   transform: scale(1.1);
 }
 
-/* PORTFOLIO */
 
-.portfolio_1,
-.portfolio_2,
-.portfolio_3,
-.portfolio_4,
-.portfolio_5 {
-  display: flex;
-  flex-direction: column;
-}
+/* PORTFOLIO */
 
 .portfolio_header {
   font-family: "Playfair Display", serif;
@@ -169,93 +161,6 @@ html {
   margin: 0 50px;
 }
 
-.portfolio_1_img,
-.portfolio_2_img,
-.portfolio_3_img,
-.portfolio_4_img,
-.portfolio_5_img {
-  width: 400px;
-  margin: 30px;
-}
-
-.portfolio_1_text,
-.portfolio_2_text,
-.portfolio_3_text,
-.portfolio_4_text,
-.portfolio_5_text {
-  display: none;
-  position: absolute;
-  z-index: 2;
-  top: 20%;
-  font-family: "Proza Libre", sans-serif;
-  text-align: center;
-  pointer-events: none;
-}
-
-.portfolio_1_text {
-  left: 16%;
-}
-
-.portfolio_2_text {
-  left: 18%;
-}
-
-.portfolio_4_text {
-  left: 12%;
-}
-
-.portfolio_5_text {
-  left: 12%;
-}
-
-.portfolio_text-title {
-  font-size: 30px;
-}
-
-.portfolio_text-description {
-  font-size: 20px;
-  font-style: italic;
-  padding-bottom: 15px;
-}
-
-.portfolio_text-link {
-  font-size: 15px;
-  margin: 3px 8px;
-  color: black;
-  z-index: 2;
-  font-family: "Proza Libre", sans-serif;
-  text-align: center;
-  text-decoration: none;
-}
-
-.portfolio_text-link:hover {
-  text-decoration: underline;
-}
-
-.portfolio_1,
-.portfolio_2,
-.portfolio_3,
-.portfolio_4,
-.portfolio_5 {
-  position: relative;
-}
-
-.portfolio_1_img:hover,
-.portfolio_2_img:hover,
-.portfolio_3_img:hover,
-.portfolio_4_img:hover,
-.portfolio_5_img:hover {
-  opacity: 0.25;
-  transition: 300ms;
-}
-
-.portfolio_1_img:hover + .portfolio_1_text,
-.portfolio_2_img:hover + .portfolio_2_text,
-.portfolio_3_img:hover + .portfolio_3_text,
-.portfolio_4_img:hover + .portfolio_4_text,
-.portfolio_5_img:hover + .portfolio_5_text {
-  display: block;
-}
 
 /* FOOTER */
 
@@ -289,12 +194,5 @@ html {
 @media only screen and (max-width: 375px) {
   .header {
     line-height: 50px;
-  }
-
-  .portfolio_1_img,
-  .portfolio_2_img,
-  .portfolio_3_img,
-  .portfolio_4_img {
-    width: 375px;
   }
 }

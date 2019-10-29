@@ -12,9 +12,9 @@ const Container = styled.div(props => ({
   textAlign: 'center',
   backgroundImage: `url(${props.image})`,
   backgroundSize: 'cover',
-  '-webkit-box-shadow': '5px 5px 10px -4px rgba(0,0,0,0.8)',
-  '-moz-box-shadow': '5px 5px 10px -4px rgba(0,0,0,0.8)',
-  boxShadow: '5px 5px 10px -4px rgba(0,0,0,0.8)',
+  '-webkit-box-shadow': '2px 2px 5px 0px rgba(0,0,0,0.5);',
+  '-moz-box-shadow': '2px 2px 5px 0px rgba(0,0,0,0.5);',
+  boxShadow: '2px 2px 5px 0px rgba(0,0,0,0.5);',
 }));
 
 const CardInfo = styled.div(props => ({
