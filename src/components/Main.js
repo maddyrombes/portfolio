@@ -1,5 +1,5 @@
 import React from 'react'
-import laptop from '../images/laptop.JPG'
+import laptop from '../images/laptop.png'
 import Header from './Header'
 
 const Main = () => {

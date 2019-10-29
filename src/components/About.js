@@ -16,7 +16,6 @@ import json from '../images/logos/json.svg'
 import ruby from '../images/logos/ruby.svg'
 import rails from '../images/logos/rails.svg'
 
-
 const About = () => {
   return (      
     <div className="about" id="about">
