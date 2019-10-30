@@ -59,8 +59,9 @@ html {
   font-size: 14px;
 }
 
-.mainnav_listitem:hover {
+.mainnav_listitem:hover, .mainnav_listitem:focus {
   text-decoration: underline;
+  outline: none;
 }
 
 .mainnav_h2 {
@@ -89,9 +90,25 @@ html {
   font-size: 30px;
 }
 
+.about_description-container {
+  padding: 25px 0;
+}
+
 .about_description {
-  padding-top: 40px;
-  line-height: 40px;
+  font-size: 18px;
+  width: 60vw;
+  margin: 0 auto;
+  line-height: 25px;
+  padding: 8px 0;
+}
+
+.email-link {
+  color: #3d3d3d;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
 }
 
 .about_logos {
@@ -184,8 +201,9 @@ html {
   text-decoration: none;
 }
 
-.footer-link:hover {
+.footer-link:hover, .footer-link:focus {
   text-decoration: underline;
+  outline: none;
 }
 
 

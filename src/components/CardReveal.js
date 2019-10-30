@@ -15,6 +15,10 @@ const Container = styled.div(props => ({
   '-webkit-box-shadow': '2px 2px 5px 0px rgba(0,0,0,0.5);',
   '-moz-box-shadow': '2px 2px 5px 0px rgba(0,0,0,0.5);',
   boxShadow: '2px 2px 5px 0px rgba(0,0,0,0.5);',
+  transition: 'all .2s ease-in-out',
+  ':hover': {
+    transform: 'scale(1.05)'
+  }
 }));
 
 const CardInfo = styled.div(props => ({
@@ -33,7 +37,7 @@ const CardInfo = styled.div(props => ({
   '-moz-user-select': 'none',
   '-ms - user - select': 'none',
   userSelect: 'none',
-  transition: 'all .3s',
+  transition: 'all .3s ease-in-out',
   lineHeight: '20px',
   overflow: 'hidden',
 }));

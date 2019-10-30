@@ -46,7 +46,7 @@ const projects = [
 
 const Portfolio = () => {
   return (
-    <div>
+    <div id="portfolio">
       <h3 className="portfolio_header">PORTFOLIO</h3>
       <div className="portfolio_images">
       {projects.map(proj => (
