@@ -21,8 +21,8 @@ const Header = () => {
           </HashLink>
         </li>
         <li>
-          <HashLink className="mainnav_listitem" to="/#contact">
-            CONTACT
+          <HashLink className="mainnav_listitem" to="/#resume">
+            RÉSUMÉ
           </HashLink>
         </li>
       </ul>

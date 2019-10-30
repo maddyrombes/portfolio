@@ -178,6 +178,24 @@ html {
   margin: 0 50px;
 }
 
+/* RESUME */
+
+.resume_header {
+  font-family: "Playfair Display", serif;
+  padding-top: 40px;
+  letter-spacing: 5px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.resume {
+  width: 500px;
+  height: 680px;
+  display: flex;
+  margin: 0 auto;
+  padding: 10px;
+}
+
 
 /* FOOTER */
 

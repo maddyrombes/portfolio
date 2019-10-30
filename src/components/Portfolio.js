@@ -1,5 +1,5 @@
 import React from 'react';
-import CardReveal from './CardReveal'
+import CardReveal from './CardReveal';
 
 const projects = [
   {
