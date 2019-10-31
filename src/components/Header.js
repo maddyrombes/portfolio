@@ -16,6 +16,11 @@ const Header = () => {
           </HashLink>
         </li>
         <li>
+          <HashLink className="mainnav_listitem" to="/#technologies">
+            TECHNOLOGIES
+          </HashLink>
+        </li>
+        <li>
           <HashLink className="mainnav_listitem" to="/#portfolio">
             PORTFOLIO
           </HashLink>
