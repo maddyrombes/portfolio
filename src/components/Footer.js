@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Footer() {
   return (
-    <div className="footer-outer" id="contact">
+    <div id="contact">
       <hr width="100%" />
       <div className="footer-inner">
         <div>
