@@ -18,6 +18,10 @@ const Container = styled.div(props => ({
   transition: 'all .2s ease-in-out',
   ':hover': {
     transform: 'scale(1.05)'
+  },
+  '@media only screen and (max-width: 500px)': {
+    width: '200px',
+    height: '200px',
   }
 }));
 
@@ -40,6 +44,12 @@ const CardInfo = styled.div(props => ({
   transition: 'all .3s ease-in-out',
   lineHeight: '20px',
   overflow: 'hidden',
+  '@media only screen and (max-width: 500px)': {
+    width: '200px',
+    height: props.openStatus ? '200px' : '80px',
+    marginTop: props.openStatus ? '0' : '120px',
+    lineHeight: '10px',
+  }
 }));
 
 const CardInfoLeft = styled.div(() => ({
@@ -51,15 +61,24 @@ const CardInfoLeft = styled.div(() => ({
 const H3 = styled.h3(props => ({
   fontSize: '22px',
   marginBottom: props.openStatus ? '20px' : '0px',
+  '@media only screen and (max-width: 5000px)': {
+    fontSize: '14px',
+  }
 }));
 
 const H4 = styled.h4(() => ({
   margin: '8px 0 10px 0',
+  '@media only screen and (max-width: 500px)': {
+    fontSize: '10px',
+  }
 }));
 
 const Link = styled.h5(props => ({
   display: props.openStatus ? 'block' : 'none',
   margin: '0',
+  '@media only screen and (max-width: 500px)': {
+    fontSize: '10px',
+  }
 }));
 
 const A = styled.a(() => ({

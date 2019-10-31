@@ -227,8 +227,43 @@ html {
 
 /* MEDIA QUERIES */
 
-@media only screen and (max-width: 375px) {
-  .header {
-    line-height: 50px;
+@media only screen and (max-width: 500px) {
+  .header_h1 {
+    font-size: 22px;
   }
+  .header_container {
+    margin: 0;
+    line-height: 10px;
+  }
+  .mainnav_h2 {
+    font-size: 14px;
+  }
+  .mainnav_list {
+    margin-top: 12px;
+  }
+  .mainnav_listitem {
+    margin-right: 35px;
+    font-size: 10px;
+  }
+  .about {
+    margin: 0;
+  }
+  .about_header {
+    font-size: 22px;
+  }
+  .about_description {
+    font-size: 14px;
+  }
+  .portfolio_header {
+    font-size: 22px;
+  }
+  .footer-label {
+    font-size: 12px;
+  }
+  .footer-link {
+    font-size: 12px;
+  }
+
+
+
 }
