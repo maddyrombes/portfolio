@@ -46,7 +46,7 @@ const CardInfo = styled.div(props => ({
   overflow: 'hidden',
   '@media only screen and (max-width: 500px)': {
     width: '200px',
-    height: props.openStatus ? '200px' : '80px',
+    height: props.openStatus ? '180px' : '80px',
     marginTop: props.openStatus ? '0' : '120px',
     lineHeight: '10px',
   }

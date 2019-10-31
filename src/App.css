@@ -77,9 +77,8 @@ html {
   font-size: 20px;
   width: 100vw;
   height: 100vh;
-  margin-top: 50px;
+  margin: 50px 0 100px 0;
   padding-top: 20px;
-  margin-bottom: 100px;
   z-index: 1;
   position: relative;
 }
@@ -242,14 +241,33 @@ html {
     margin-right: 35px;
     font-size: 10px;
   }
-  .about {
+  #about {
     margin: 0;
   }
   .about_header {
     font-size: 22px;
   }
+  .me_img {
+    width: 200px;
+    height: 200px;
+    transform: translateX(60px);
+    z-index: -1;
+  }
+  .about_description-container {    
+    width: 180px;
+    height: 330px;
+    padding: 20px;
+    transform: translate(230px, 40px);
+  }
   .about_description {
     font-size: 14px;
+  }
+  #technologies {
+    padding-top: 0;
+    height: auto;
+  }
+  .tech_header {
+    font-size: 22px;
   }
   .portfolio_header {
     font-size: 22px;
