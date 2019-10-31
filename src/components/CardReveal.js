@@ -61,7 +61,7 @@ const CardInfoLeft = styled.div(() => ({
 const H3 = styled.h3(props => ({
   fontSize: '22px',
   marginBottom: props.openStatus ? '20px' : '0px',
-  '@media only screen and (max-width: 5000px)': {
+  '@media only screen and (max-width: 500px)': {
     fontSize: '14px',
   }
 }));
